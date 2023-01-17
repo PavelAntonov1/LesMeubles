@@ -1,0 +1,41 @@
+.feature {
+  background-color: rgba($color-white, 0.3);
+  border-bottom: 5px solid $color-white;
+  border-right: 5px solid $color-white;
+  padding: 2rem;
+  color: $color-white;
+  display: inline-block;
+  width: 25rem;
+  height: 27rem;
+
+  transition: all 0.4s;
+  position: relative;
+
+  &:hover {
+    transform: rotateY(-25deg);
+    box-shadow: 2rem 0 1.5rem rgba($color-black, 0.15);
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+
+    &--image {
+      color: $color-white;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+}
+
+.feature-container {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}

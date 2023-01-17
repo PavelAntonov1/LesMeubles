@@ -1,0 +1,160 @@
+.section-about {
+  display: flex;
+  flex-direction: column;
+  row-gap: $margin-top-large;
+
+  & h2 {
+    color: $color-green-light;
+  }
+
+  .article {
+    margin: 0 auto;
+    display: flex;
+    width: 70%;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    &--2 {
+      flex-direction: row-reverse;
+      position: relative;
+    }
+  }
+
+  .article-text {
+    align-self: flex-start;
+    color: $color-green-light;
+  }
+
+  .article-image {
+    box-shadow: 0rem 1rem 1rem rgba($color-black, 0.15);
+    transition: all 0.3s;
+
+    &--1 {
+      width: 100%;
+    }
+
+    &--2 {
+      width: 100%;
+    }
+
+    &--3 {
+      width: 35%;
+      position: absolute;
+      bottom: 0;
+      left: 45rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0rem 2rem 2rem rgba($color-black, 0.12);
+    }
+  }
+}
+
+.section-features {
+  padding: 5rem 5rem 8rem 5rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary 0%,
+    $color-green-light 100%
+  );
+  text-align: center;
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  & > h2 {
+    color: $color-white;
+  }
+
+  .features-container {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25rem);
+    gap: 5rem;
+    list-style-type: none;
+    padding: 0 35rem;
+  }
+}
+
+.section-examples {
+  padding: 5rem;
+  text-align: center;
+  position: relative;
+
+  & > h2 {
+    color: $color-green-light;
+  }
+}
+
+.section-reviews {
+  padding: 5rem;
+  text-align: center;
+  position: relative;
+
+  & > h2 {
+    color: $color-green-light;
+  }
+}
+
+.section-contact {
+  padding: 5rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary 0%,
+    $color-green-light 100%
+  );
+  text-align: center;
+
+  & > h2 {
+    color: $color-white;
+  }
+
+  .info-container {
+    margin: 4rem auto;
+    display: flex;
+    column-gap: 2rem;
+    width: 85%;
+
+    & > * {
+      width: 50%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+      font-size: 2.2rem;
+      justify-content: flex-start;
+
+      &--image {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .copy-text {
+      color: white;
+      font-size: 1.3rem;
+      text-align: justify;
+      border-top: 3px solid $color-white;
+      padding-top: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.review-box {
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+
+  .review {
+    padding-left: 11rem;
+    position: relative;
+    color: $color-white;
+    min-height: 40rem;
+    min-width: 70rem;
+    width: 50%;
+    display: none;
+
+    &__description {
+      background-color: $color-green-dark;
+      position: absolute;
+      padding: 2rem;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 25rem;
+
+      .client-comment {
+        font-style: italic;
+        text-align: left;
+      }
+    }
+
+    &__image {
+      box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+      width: 100%;
+      height: 100%;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__levers {
+    list-style-type: none;
+    color: white;
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 10rem;
+
+    .review-lever {
+      cursor: pointer;
+      padding: 1rem 1.5rem 1rem 1rem;
+      background-color: $color-green-light;
+      text-align: end;
+      width: 4rem;
+
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+      transition: all 0.2s;
+
+      &--active {
+        width: 10rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/main.js" type="module"></script>
+    <title>Les Meubles</title>
+  </head>
+  <body>
+    <div class="navigation"> 
+      <input type="checkbox" id="check" class="navigation__checkbox" hidden/>
+      
+      <label class="navigation__button" for="check">
+        <div class="navigation__button--line"></div>
+      </label>
+
+
+      <div class="navigation__content">
+        <ul class="navigation__list">
+          <li><a href="#" class="btn--goto">About Us</a></li>
+          <li><a href="#" class="btn--goto">Why Us</a></li>
+          <li><a href="#" class="btn--goto">Our Works</a></li>
+          <li><a href="#" class="btn--goto">Our Clients</a></li>
+          <li><a href="#" class="btn--goto">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__text-content">
+        <h1 class="heading-1">Les Meubles</h1>
+        <p class="slogan margin-top-smallest">
+          Best custom minimalist furniture made for you.
+        </p>
+
+        <div class="header__controls margin-top-largest">
+          <button class="btn btn--contact">Contact Us</button>
+          <button class="btn btn--goto" data-goto="section-1">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about margin-top-large" id="section-about">
+        <div class="article article--1">
+          <div class="article-text">
+            <h2 class="heading-2">Who we are?</h2>
+            <p class="article-paragraph margin-top-small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              tempor tincidunt imperdiet. Nulla laoreet nibh quis nulla
+              volutpat, id dignissim turpis gravida.
+            </p>
+
+            <p class="article-paragraph margin-top-small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              tempor tincidunt imperdiet. Nulla laoreet nibh quis nulla
+              volutpat, id dignissim turpis gravida.
+            </p>
+
+            <p class="article-paragraph margin-top-small">
+              Quisque in eros malesuada, porta odio at, suscipit risus. Mauris
+              imperdiet, felis maximus fringilla aliquet, urna metus laoreet
+              erat, et dapibus justo nisl a sapien. Nam id scelerisque risus
+            </p>
+          </div>
+
+          <img
+            class="article-image article-image--1"
+            src="./images/image-about-1.jpg"
+          />
+        </div>
+
+        <div class="article article--2">
+          <div class="article-text">
+            <h2 class="heading-2">What we do?</h2>
+            <p
+              class="article-paragraph margin-top-small"
+              alt="image-about-1"
+            >
+              In sed porttitor metus, in hendrerit nisl. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Quisque in eros malesuada, porta odio at, suscipit
+              risus. Mauris imperdiet, felis maximus fringilla aliquet, urna
+              metus laoreet erat, et dapibus justo nisl a sapien. Nam id
+              scelerisque risus
+            </p>
+            <p
+              class="article-paragraph margin-top-small"
+              alt="image-about-1"
+            >
+              Vivamus in porttitor tortor, et lobortis diam. Nulla laoreet nibh
+              quis nulla volutpat, id dignissim turpis gravida. Mauris imperdiet, felis maximus fringilla aliquet, urna
+              metus laoreet erat, et dapibus justo nisl a sapien. Nam id
+              scelerisque risus
+            </p>
+            <p
+              class="article-paragraph margin-top-small"
+              alt="image-about-1"
+              >
+              In sed porttitor metus, in hendrerit nisl. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Quisque in eros malesuada, porta odio at, suscipit
+              risus. Vivamus in porttitor tortor, et lobortis diam. Nulla laoreet nibh
+              quis nulla volutpat, id dignissim turpis gravida.
+            </p>
+          </div>
+
+          <img
+            class="article-image article-image--2"
+            src="./images/image-about-2.jpg"
+            alt="image-about-2"
+          />
+        </div>
+      </section>
+
+      <section class="section-features margin-top-large">
+        <h2 class="heading-2">Why Us?</h2>
+
+        <ul class="features-container margin-top-medium">
+
+          <li class="feature-container">
+            <div class="feature feature--1">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-paint-roll">
+                  </svg>
+                  <h3 class="feature__heading--text heading-4">Customization</h3>
+                </div>
+                
+                <p class="feature__text margin-top-smallest">Quisque in eros malesuada, porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <div class="feature feature--2">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-star">
+                </svg>
+                <h3 class="feature__heading--text heading-4">Quality</h3>
+              </div>
+                
+                <p class="feature__text margin-top-smallest">Quisque in eros malesuada, porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <div class="feature feature--3">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-chair">
+                  </svg>
+                  <h3 class="feature__heading--text heading-4">Minimalism</h3>
+                </div>
+                
+                <p class="feature__text margin-top-smallest">Quisque in eros malesuada, porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <div class="feature feature--4">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-car">
+                  </svg>
+                  <h3 class="feature__heading--text heading-4">Fast Delivery</h3>
+                </div>
+                
+                <p class="feature__text margin-top-smallest">Quisque in eros malesuada, porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <div class="feature feature--5">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-dollar">
+                </svg>
+                <h3 class="feature__heading--text heading-4">Affordability</h3>
+              </div>
+  
+              <p class="feature__text margin-top-smallest">Quisque in eros malesuada,   porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+
+          <li class="feature-container">
+            <div class="feature feature--6">
+              <div class="feature__heading">
+                <svg class="feature__heading--image">
+                  <use xlink:href="images/svg-1/sprite.svg#icon-like">
+                </svg>
+                <h3 class="feature__heading--text heading-4">Reliability</h3>
+              </div>
+  
+              <p class="feature__text margin-top-smallest">Quisque in eros malesuada,   porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada, porta odio at, suscipit risus.</p>
+            </div>
+          </li>
+        </div>
+      </section>
+
+      <section class="section-examples">
+        <h2 class="heading-2">See examples of our works</h2>
+
+        <div class="slider margin-top-medium">
+          <button class="slider__button slider__button--left">&#60;</button>
+          
+          <ul class="slider__images" >
+            <li class="image-container image-container--1">
+              <img src="images/image-examples-1.jpg" alt="image-examples-1">
+            </li>
+            <li class="image-container image-container--2">
+              <img src="images/image-examples-2.jpg" alt="image-examples-2">
+            </li>
+            <li class="image-container image-container--3">
+              <img src="images/image-examples-3.jpg" alt="image-examples-3">
+            </li>
+            <li class="image-container image-container--4">
+              <img src="images/image-examples-4.jpg" alt="image-examples-4">
+            </li>
+            <li class="image-container image-container--5">
+              <img src="images/image-examples-5.png" alt="image-examples-5">
+            </li>
+          </ul>
+          
+          <button class="slider__button slider__button--right">&#62;</button>
+
+          <ul class="slider__dots-container">
+          </ul>
+        </div>
+
+        <div class="background-line"></div>
+      </section>
+
+      <section class="section-reviews">
+        <h2 class="heading-2">Meet our clients</h2>
+
+        <div class="review-box margin-top-medium">
+          <div class="review review--1">
+            <div class="review__description">
+              <h3 class="heading-3 client-name">Pete Johnson</h3>
+              <p class="client-comment article-text margin-top-small">
+                &laquo;That's just wonderful. I was never so satisfied. Les Meubles gives you a perfect quality furniture that will fit into your minimalistic interior!&raquo;
+              </p>
+            </div>
+
+            <img class="review__image" alt="person-1" src="images/person-1.jpg">
+          </div>
+
+          <div class="review review--2">
+            <div class="review__description">
+              <h3 class="heading-3 client-name">Nadya Simpson</h3>
+              <p class="client-comment article-text margin-top-small">
+                &laquo;Quisque in eros malesuada,   porta odio at, suscipit risus. Mauris imperdiet, felis maximus. Quisque in eros malesuada!&raquo;
+              </p>
+            </div>
+
+            <img class="review__image" alt="person-2" src="images/person-2.jpg">
+          </div>
+
+          <div class="review review--3">
+            <div class="review__description">
+              <h3 class="heading-3 client-name">John Salivan</h3>
+              <p class="client-comment article-text margin-top-small">
+                &laquo;Quod nulla, accusamus perferendis sapiente inventore voluptatum natus ipsam? Iusto ipsa dolor cumque dolores labore!&raquo;
+              </p>
+            </div>
+
+            <img class="review__image" alt="person-3" src="images/person-3.jpg">
+          </div>
+
+          <div class="review review--4">
+            <div class="review__description">
+              <h3 class="heading-3 client-name">Robert Smith</h3>
+              <p class="client-comment article-text margin-top-small">
+                &laquo;Nunc pellentesque dictum lacus vel condimentum. Maecenas pretium ornare arcu a feugiat. Morbi auctor et mauris quis sagittis...&raquo;
+              </p>
+            </div>
+
+            <img class="review__image" alt="person-4" src="images/person-4.jpeg">
+          </div>
+
+          <div class="review review--5">
+            <div class="review__description">
+              <h3 class="heading-3 client-name">Michael Peterson</h3>
+              <p class="client-comment article-text margin-top-small">
+                &laquo;Praesent cursus diam sem, at volutpat lacus cursus egestas. Proin at luctus metus, blandit congue quam. Aliquam erat volutpat.&raquo;
+              </p>
+            </div>
+
+            <img class="review__image" alt="person-5" src="images/person-5.jpg">
+          </div>
+          
+          
+          <ul class="review-box__levers">
+            <li class="review-lever review-lever--1 review-lever--active">1</li>
+            <li class="review-lever review-lever--2">2</li>
+            <li class="review-lever review-lever--3">3</li>
+            <li class="review-lever review-lever--4">4</li>
+            <li class="review-lever review-lever--5">5</li>
+          </ul>
+        </div>
+
+        <div class="background-line"></div>
+      </section>
+
+      <section class="section-contact margin-top-medium">
+        <h2 class="heading-2">Interested? Contact Us!</h2>
+
+        <div class="info-container">
+          <form class="contact-form" action="https://formspree.io/f/xlezzpqb"
+          method="POST">
+            <input type="text" class="input input--first-name" name="first-name" placeholder="First Name" >
+            <input type="text" class="input input--last-name" name="last-name" placeholder="Last Name" >
+            <input type="email" class="input input--email" name="email" placeholder="Email" >
+            <input type="tel" class="input input--tel" name="phone-number" placeholder="Phone Number" >
+            <textarea name="message" cols="30" rows="5" class="contact-form--message" placeholder="Type your message here" ></textarea>
+            <button class="btn btn--submit" type="submit">Submit</button>
+          </form>
+
+          <div class="info">
+            <div class="contact-info">
+              <div class="contact contact--address">
+                <svg class="contact--image">
+                  <use xlink:href="images/svg-2/sprite.svg#bxs-map">
+                </svg>
+                <p>1141 Union Street</p>
+              </div>
+              
+              <div class="contact contact--email">
+                <svg class="contact--image">
+                  <use xlink:href="images/svg-2/sprite.svg#bx-envelope">
+                </svg>
+                <p>lesmeubles@gmail.com</p>
+              </div>
+                
+              <div class="contact contact--phone">
+                <svg class="contact--image">
+                  <use xlink:href="images/svg-2/sprite.svg#bxs-phone">
+                </svg>
+                <p>206-731-6063</p>
+              </div>
+            </div>
+
+            <p class="copy-text">Built by Pavel Antonov for his portfolio. Copyright © by Pavel Antonov. The company is non-existent. All the photos and icons were found on the internet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

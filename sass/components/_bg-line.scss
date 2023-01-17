@@ -1,0 +1,14 @@
+.background-line {
+  height: 20rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    $color-brown-dark,
+    $color-brown-light
+  );
+  transform: skewY(10deg);
+  z-index: -1;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
